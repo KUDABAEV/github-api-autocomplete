@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+.app {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  max-width: 400px;
+  box-shadow: 0 0 30px black;
+}
+
+.search {
+  padding: 16px;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.input-search {
+  width: 100%;
+  padding: 8px;
+
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.search-item {
+  cursor: pointer;
+
+  padding: 8px;
+
+  border-bottom: black solid 1px;
+  transition: 0.3s;
+}
+
+.search-item:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.repositories-title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.repositories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.repositories-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  padding: 16px;
+  border: black solid 1px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.repositories-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 1.4rem;
+}
+
+.repositories-btn-remove {
+  display: block;
+  border: black solid 1px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+.repositories-btn-remove:hover {
+  color: white;
+  scale: 1.2;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.repositories-btn-remove:active {
+  scale: 0.7;
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none;
+}
